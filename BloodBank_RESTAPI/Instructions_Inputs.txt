@@ -1,0 +1,51 @@
+-----------------------------------------
+Seeker
+--------------------------------------
+	{
+	"seekerId":2122,
+	"firstName":"John",
+	"lastName":"Sims",
+	"gender":"Male",
+	"age":22,
+	"bloodGroup":"B+",
+	"city":"Vancouver",
+	"phoneNumber":"+1(437)770 2710"
+	}
+
+--------------------------------------
+BloodStock
+---------------------------------------------
+	{
+	"bloodStockId":2122,
+	"bloodGroup":"AB+",
+	"quantity":21,
+	"status":"Available",
+	"bestBefore":"2012-04-23T18:25:43.511Z"
+	}
+---------------------------------------------
+BloodBank
+-------------------------------------------------
+	{
+	"bloodBanbkId":2122,
+	"bloodbankName":"Scarborough BloodBank",
+	"address":"Lawrence and McCown",
+	"city":"Toronto",
+	"phoneNumber":"+1(437)770 2710",
+	"website":"www.scarboroughbloobank.com",
+	"email":"scarboroughbloobank@bank.ca"
+	}
+--------------------------------------------------
+
+for retrieving list of bloodstocks--http://localhost:8081/api/bloodstocks
+for retrieving lits of bloodbanks --http://localhost:8081/api/bloodbanks
+for retrieving list of seekers -- http://localhost:8081/api/seekers
+
+
+for adding bloodbank--http://localhost:8081/api/bloodbank
+for adding bloodstock--http://localhost:8081/api/bloodstock
+for adding seeker -- http://localhost:8081/api/seeker
+
+
+
+
+for 

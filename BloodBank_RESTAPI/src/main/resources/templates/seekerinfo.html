@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta charset="ISO-8859-1">
+<title>Seeker Info</title>
+</head>
+<body>
+<h1 align="center">Seeker Information</h1>
+<center>
+<table id="myTable" align="center" cellpadding="10" cellspacing="5">
+		<tr>
+			<th>Seeker Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Gender</th>
+			<th>Blood Group</th>
+			<th>Age</th>
+			<th>City</th>
+			<th>Phone</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		<tr th:each="seeker : ${seekersList}">
+			<td th:text="${seeker.seekerId}" contenteditable="true">Seeker Id</td>
+			<td th:text="${seeker.firstName}" contenteditable="true">First Name</td>
+			<td th:text="${seeker.lastName}" contenteditable="true">Last Name</td>
+			<td th:text="${seeker.gender}" contenteditable="true">Gender</td>
+			<td th:text="${seeker.bloodGroup}" contenteditable="true">Blood Group</td>
+			<td th:text="${seeker.age}" contenteditable="true">Age</td>
+			<td th:text="${seeker.city}" contenteditable="true">City</td>
+			<td th:text="${seeker.phoneNumber}" contenteditable="true">Phone Number</td>
+				<td><button type="button" style="font-weight: bolder;" class="btn btn-warning"><a href="update">Update</a></td>
+				
+	<td><button type="button" style="font-weight: bolder;" class="btn btn-danger"><a onclick="deleteRow(this)">Delete</a></button></td> 
+		</tr>
+	</table></center>
+    <strong><a href="/">Go back</a></strong>
+<script>
+function deleteRow(r) {
+  var i = r.parentNode.parentNode.rowIndex;
+  document.getElementById("myTable").deleteRow(i);
+}
+</script>
+</body>
+</html>
