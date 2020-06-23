@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>Edit Blood Stock</title>
+</head>
+<body>
+	<form action="edit" method="post">  
+        	<h1>Edit Blood Stock Form</h1>
+            <table class="table table-hover">  
+                <tr class="table-secondary">  
+                    <td><label for="bsId" class="text-warning">Blood Stock Id</label></td>  
+                    <td><input type="text" name="bsId" id="readOnlyInput" th:value="${obj.bsId}" readonly></input></td>  
+                </tr>
+                <tr class="table-secondary">  
+                    <td><label for="bloodGroup" class="text-warning">Blood Group</label></td>  
+                    <td><input type="text" name="bloodGroup" id="readOnlyInput" th:value="${obj.bloodGroup}" readonly></input></td>  
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="quantity" class="text-warning">Quantity</label></td>  
+                    <td><input type="number" min=0 name="quantity" th:value="${obj.quantity}"></input></td>  
+                </tr>  
+                <tr class="table-secondary" >  
+                    <td><label for="bestBefore" class="text-warning">Best Before</label></td>  
+                    <td><input type="date" name="bestBefore" th:value="${obj.bestBefore}" readonly></input></td>  
+                </tr>  
+                <tr class="table-secondary" >  
+                    <td><label for="status" class="text-warning">Status</label></td>  
+                    <td><input type="text" name="status" th:value="${obj.status}"></input></td>  
+                </tr>  
+                <tr>  
+                    <td></td>  
+                    <td><input type="submit" value="Update Blood Stock"></input></td>  
+                </tr>  
+            </table>  
+        </form>
+</body>
+</html>

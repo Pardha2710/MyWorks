@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>Insert Blood Bank</title>
+</head>
+<body>
+	<form method="post" action="#" th:action="@{/add}" th:object="${bloodBank}">  
+        	<h1>Fill Online Blood Bank Form</h1>
+            <table class="table table-hover">  
+                <tr class="table-secondary">  
+                    <td><label for="bbId" class="text-success">Blood Bank Id</label></td>  
+                    <td><input type="text" th:field="*{bbId}"></input></td>  
+                </tr>
+                <tr class="table-secondary">  
+                    <td><label for="bloodBankName" class="text-success">Blood Bank Name</label></td>  
+                    <td><input type="text" th:field="*{bloodBankName}"></input><span class="text-danger" th:if="${#fields.hasErrors('bloodBankName')}" th:errors="*{bloodBankName}">Name Error</span></td>  
+                    
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="address" class="text-success">Address</label></td>  
+                    <td><input type="text"  th:field="*{address}"></input><span class="text-danger" th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Name
+                            Error</span>  </td>
+
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="city" class="text-success">City</label></td>  
+                    <td><input type="text" th:field="*{city}"></input><span class="text-danger" th:if="${#fields.hasErrors('city')}" th:errors="*{city}">Name
+                            Error</span></td> 
+                     
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="phone" class="text-success">Phone</label></td>  
+                    <td><input type="text" th:field="*{phone}"></input><span class="text-danger" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">Name
+                            Error</span> </td> 
+                    
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="email" class="text-success">email</label></td>  
+                    <td><input type="text"  th:field="*{email}"></input><span class="text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Name
+                            Error</span></td>  
+                    
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="website" class="text-success">Web-Site</label></td>  
+                    <td><input type="text" th:field="*{website}"></input><span class="text-danger" th:if="${#fields.hasErrors('website')}" th:errors="*{website}">Name
+                            Error</span></td>  
+                    
+                </tr>  
+                <tr >  
+                    <td></td>  
+                    <td><input type="submit" value="Add Blood Bank" ></input></td>  
+                </tr>  
+            </table>  
+        </form>
+</body>
+</html>

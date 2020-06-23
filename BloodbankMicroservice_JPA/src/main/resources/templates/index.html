@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>List of Blood Bank</title>
+</head>
+<body>
+<table border="1" class="table table-hover">
+		<tr class="table-active">
+			<th>Blood Bank Id</th>
+			<th>Blood Bank Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>Phone</th>
+			<th>Email</th>
+			<th>Web-Site</th>
+			<th>Edit Link</th>
+			<th>Delete Link</th>
+		</tr>
+		<tr th:each="bloodBank : ${list}" class="table-light">
+			<td th:text="${bloodBank.bbId}">Blood Bank Id</td>
+			<td th:text="${bloodBank.bloodBankName}">Blood Bank Name</td>
+			<td th:text="${bloodBank.address}">Address</td>
+			<td th:text="${bloodBank.city}">City</td>
+			<td th:text="${bloodBank.phone}">Phone</td>
+			<td th:text="${bloodBank.email}">Email</td>
+			<td th:text="${bloodBank.website}">Web-Site</td>
+			<td><a th:href="@{/edit/{id}(id=${bloodBank.bbId})}">Edit Here</a></td>
+			<td><a th:href="@{/delete/{id}(id=${bloodBank.bbId})}">Delete Here</a></td>
+		</tr>
+	</table>
+    <strong><a href="/add">Add New Blood Bank</a></strong>
+
+</body>
+</body>
+</html>

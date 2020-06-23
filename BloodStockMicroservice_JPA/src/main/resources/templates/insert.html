@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>Insert Blood Stock</title>
+</head>
+<body>
+	<form method="post" action="#" th:action="@{/add}" th:object="${bloodStock}">  
+        	<h1>Fill Online Blood Stock Form</h1>
+            <table class="table table-hover">  
+                <tr class="table-secondary">  
+                    <td><label for="bsId" class="text-success">Blood Stock Id</label></td>  
+                    <td><input type="text" th:field="*{bsId}"></input></td>  
+                </tr>
+                <tr class="table-secondary">  
+                    <td><label for="bloodGroup" class="text-success">Blood Group</label></td>  
+                    <td><input type="text" th:field="*{bloodGroup}"></input><span class="text-danger" th:if="${#fields.hasErrors('bloodGroup')}" th:errors="*{bloodGroup}">Name Error</span></td>  
+                    
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="quantity" class="text-success">Quantity</label></td>  
+                    <td><input type="number" min=1 th:field="*{quantity}"></input><span class="text-danger" th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}">Name
+                            Error</span>  </td>
+
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="bestBefore" class="text-success">Best Before</label></td>  
+                    <td><input type="date" th:field="*{bestBefore}"></input><span class="text-danger" th:if="${#fields.hasErrors('bestBefore')}" th:errors="*{bestBefore}">Name
+                            Error</span></td> 
+                     
+                </tr>  
+                <tr class="table-secondary">  
+                    <td><label for="status" class="text-success">Status</label></td>  
+                    <td><input type="text" th:field="*{status}"></input><span class="text-danger" th:if="${#fields.hasErrors('status')}" th:errors="*{status}">Name
+                            Error</span> </td> 
+                    
+                </tr>  
+                <tr >  
+                    <td></td>  
+                    <td><input type="submit" value="Add Blood Stock" ></input></td>  
+                </tr>  
+            </table>  
+        </form>
+</body>
+</html>

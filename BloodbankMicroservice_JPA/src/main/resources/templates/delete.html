@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>Delete Blood Bank</title>
+</head>
+<body>
+	<form action="delete" method="post">  
+        	<h1>Remove Blood Bank Form</h1>
+            <table class="table table-hover">  
+                <tr>  
+                    <td><label for="bbId" class="text-danger">Blood Bank Id</label></td>  
+                    <td><input type="text" name="bbId" th:value="${obj.bbId}" readonly></input></td>  
+                </tr>
+                <tr>  
+                    <td><label for="bloodBankName" class="text-danger">Blood Bank Name</label></td>  
+                    <td><input type="text" name="bloodBankName" th:value="${obj.bloodBankName}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td><label for="address" class="text-danger">Address</label></td>  
+                    <td><input type="text" name="address" th:value="${obj.address}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td><label for="city" class="text-danger">City</label></td>  
+                    <td><input type="text" name="city" th:value="${obj.city}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td><label for="phone" class="text-danger">Phone</label></td>  
+                    <td><input type="text" name="phone" th:value="${obj.phone}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td><label for="email" class="text-danger">Email</label></td>  
+                    <td><input type="text" name="email" th:value="${obj.email}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td><label for="website" class="text-danger">Web-Site</label></td>  
+                    <td><input type="text" name="website" th:value="${obj.website}" readonly></input></td>  
+                </tr>  
+                <tr>  
+                    <td></td>  
+                    <td><input type="submit" value="Delete Blood Bank"></input></td>  
+                </tr>  
+            </table>  
+        </form>
+</body>
+</html>

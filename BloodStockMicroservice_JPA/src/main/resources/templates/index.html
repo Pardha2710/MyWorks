@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>List of Blood Stock</title>
+</head>
+<body>
+<table border="1" class="table table-hover">
+		<tr class="table-active">
+			<th>Blood Stock Id</th>
+			<th>Blood Group</th>
+			<th>Quantity</th>
+			<th>Best Before</th>
+			<th>Status</th>
+			<th>Edit Link</th>
+			<th>Delete Link</th>
+		</tr>
+		<tr th:each="bloodStock : ${list}" class="table-light">
+			<td th:text="${bloodStock.bsId}">Blood Stock Id</td>
+			<td th:text="${bloodStock.bloodGroup}">Blood Group</td>
+			<td th:text="${bloodStock.quantity}">Quantity</td>
+			<td th:text="${bloodStock.bestBefore}">Best Before</td>
+			<td th:text="${bloodStock.status}">Status</td>
+			<td><a th:href="@{/edit/{id}(id=${bloodStock.bsId})}">Edit Here</a></td>
+			<td><a th:href="@{/delete/{id}(id=${bloodStock.bsId})}">Delete Here</a></td>
+		</tr>
+	</table>
+    <strong><a href="/add">Add New Blood Stock</a></strong>
+
+</body>
+</body>
+</html>
