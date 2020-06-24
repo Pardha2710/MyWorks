@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hospital Management</string>
+    <string name="login">Login</string>
+    <string-array name="listActivites">
+        <item>Patient Activity</item>
+        <item>Test Activity</item>
+    </string-array>
+</resources>
