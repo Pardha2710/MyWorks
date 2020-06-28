@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Sellermain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:textAlignment="center"
+            android:text="Product Info"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pname"
+                android:text="developer"
+                android:layout_below="@id/nameTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/catTextView"
+                android:text="Category"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pcat"
+                android:text="developer"
+                android:layout_below="@id/catTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:text="Type"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/ptype"
+                android:text="developer"
+                android:layout_below="@id/typeTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/compTextView"
+                android:text="Company"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pcomp"
+                android:text="developer"
+                android:layout_below="@id/compTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:text="Price"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pprice"
+                android:text="developer"
+                android:layout_below="@id/priceTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/locTextView"
+                android:text="Location"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/ploc"
+                android:text="developer"
+                android:layout_below="@id/locTextView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:text="Delete"
+            android:textColor="#FFF" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

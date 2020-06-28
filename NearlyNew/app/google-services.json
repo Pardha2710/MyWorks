@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "381107058857",
+    "firebase_url": "https://nearlynew-9b69c.firebaseio.com",
+    "project_id": "nearlynew-9b69c",
+    "storage_bucket": "nearlynew-9b69c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381107058857:android:1b8664ddcd0436a11b91b8",
+        "android_client_info": {
+          "package_name": "nearlynew.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381107058857-kvsj0l4itvjd1pngo9i3i2eqb24lki2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD51_arexadi4Z26RKvt65hRjBmxAMtHgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381107058857-kvsj0l4itvjd1pngo9i3i2eqb24lki2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
