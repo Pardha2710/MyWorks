@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mobileshopping.Brands">
+    <item android:title="Brands"
+        app:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/Iphone"
+            android:orderInCategory="1"
+            android:title="Iphone"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/Samsung"
+            android:title="Samsung"
+            android:orderInCategory="2"/>
+
+        <item
+            android:id="@+id/Google"
+            android:title="Google"
+            android:orderInCategory="3"/>
+
+    </menu>
+    </item>
+</menu>

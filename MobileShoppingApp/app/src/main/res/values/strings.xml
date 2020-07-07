@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"> Shopping App</string>
+    <string-array name="cardType">
+        <item>VISA</item>
+        <item>MasterCard</item>
+    </string-array>
+    <string name="nameerror">Enter a valid name</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="cityerror">Enter a valid city name</string>
+    <string name="postalerror">Enter a valid postal-code</string>
+</resources>

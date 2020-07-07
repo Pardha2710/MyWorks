@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleModels">
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="266dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243">
+
+        <RadioButton
+            android:id="@+id/pixel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Pixel 4"
+            android:textColor="#4169e1" />
+
+        <RadioButton
+            android:id="@+id/pixel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pixel 3"
+            android:textColor="#4169e1" />
+
+        <RadioButton
+            android:id="@+id/nexus5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nexus 5"
+            android:textColor="#4169e1" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:text="Google Models"
+        android:textColor="#4169e1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="93dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/gbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Plans"
+        android:textColor="#4169e1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+        app:layout_constraintVertical_bias="0.406" />
+</androidx.constraintlayout.widget.ConstraintLayout>
