@@ -1,0 +1,34 @@
+to create package.json, go to console of youre project path - npm init -y
+If you want nodemong server then go to console of youre project - npm install nodemon -D
+
+after installing then go to package.json in that you will find
+"scripts": {
+    "test": "something written bla bla"
+  },
+
+change the above scripts to
+
+"scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+
+
+After creating express.js file under config folder and placing my code make sure you run the below commands in the console of youre project path.
+
+npm install express
+npm install morgan
+npm install compression
+npm install body-parser
+npm isntall method-override
+npm isntall express-session
+npm install ejs
+npm install mongoose
+
+npm install react-scripts@2.1.8
+
+npm uninstall -g create-react-app
+
+npm init react-app my-app
+
+npm install react-scripts@2.1.8
